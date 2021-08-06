@@ -2,6 +2,7 @@ import * as mysql from 'mysql';
 import config from '../config';
 
 import RecycleCenters from './recycleCenters';
+import Comments from "./Comments";
 
 
 // export const Connection = mysql.createConnection(config.mysql);
@@ -27,5 +28,6 @@ export const Query = <T = any>(query: string, values?: any) => {
 }
 
 export default {
-    RecycleCenters
+    RecycleCenters,
+    Comments
 }
