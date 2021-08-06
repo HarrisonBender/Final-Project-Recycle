@@ -32,7 +32,7 @@ export default function Home() {
 
     // </>
 
-    <section className="searchbox">
+    <>
       <div className="container grid space-between">
         <div className="searchbox-form card text-center">
           <h2 className="mono">What and Where To Recycle!</h2>
@@ -71,9 +71,6 @@ export default function Home() {
           {/* <a href="/locations" className="btn btn-outline">
             Read More
           </a> */}
-        </div>
-      </div>
-
       <div className="container mz">
         <h1 className="md stats-heading text-center my-3 py-5">
           Recycle & Reuse
@@ -103,7 +100,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </section>
+        </div>
+      </div>
+
+    </>
   );
 }
 

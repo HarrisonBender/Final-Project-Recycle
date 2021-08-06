@@ -43,7 +43,7 @@
 //               <br></br>
 //             </p>
 
-//             <div className="chirp chirp-success text-center">
+//             <div className="comment comment-success text-center">
 //               <div className="bi-recycle">
 //                 Let Us Know How You GET YOUR RECYCLE ON!!
 //               </div>
@@ -139,7 +139,7 @@ export default function Comments() {
             <br></br>
           </p>
 
-          <div className="chirp chirp-success text-center">
+          <div className="comment comment-success text-center">
             <div className="bi-recycle">
               Let Us Know How You GET YOUR RECYCLE ON!!
             </div>

@@ -1,18 +1,27 @@
 import { Query } from "./index";
 
-const all = () => Query("SELECT * FROM Comments");
-const one = (id: string) =>
-  Query(
-    `SELECT Comments.content, Users.name 
+const all = async () => await Query(`
+SELECT Comments.content, Users.name
+FROM Comments
+JOIN Users ON Comments.userid = Users.id;
+`);
+
+
+const one = async (id: string) => await Query(`
+SELECT Comments.content, Users.name 
 FROM Comments
 JOIN Users ON Comments.userid = Users.id
-WHERE Comments.userid = ?`,
-    [id]
-  );
+WHERE Comments.id = ?;
+`,[id]);
 
+
+const post = (userid: string, content: string) => Query(`
+INSERT INTO Comments (userid, content) values (?, ?)
+`,[userid, content]);
 
 
 export default {
   all,
   one,
+  post
 };

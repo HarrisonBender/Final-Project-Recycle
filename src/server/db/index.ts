@@ -3,13 +3,8 @@ import config from '../config';
 
 import RecycleCenters from './recycleCenters';
 import Comments from "./Comments";
+import Users from "./Users";
 
-
-// export const Connection = mysql.createConnection(config.mysql);
-
-// Connection.connect(err => {
-//     if(err) console.log(err);
-// });
 
 const pool = mysql.createPool(config.mysql)
 
@@ -29,5 +24,6 @@ export const Query = <T = any>(query: string, values?: any) => {
 
 export default {
     RecycleCenters,
-    Comments
+    Comments,
+    Users
 }

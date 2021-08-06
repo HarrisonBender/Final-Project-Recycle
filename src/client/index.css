@@ -532,24 +532,24 @@ pre {
     text-align: center;
   }
   
-  /* Chirp */
-  .chirp {
+  /* Comment */
+  .comment {
     background-color: var(--light-color);
     padding: 10px 20px;
     font-weight: bold;
     margin: 15px 0;
   }
   
-  .chirp i {
+  .comment i {
     margin-right: 10px;
   }
   
-  .chirp-success {
+  .comment-success {
     
     color: var(--primary-color);
   }
   
-  .chirp-error {
+  .comment-error {
     background-color: var(--error-color);
     color:white;
   }
