@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 
 export default function Locations() {
-  const [locations, setLoctations] = useState([]);
+  const [locations, setLocations] = useState([]);
 
   useEffect(() => {
     fetch("/api/recycleCenters")
       .then((res) => res.json())
-      .then((locations) => setLoctations(locations))
+      .then((locations) => setLocations(locations))
       .catch((err) => console.error(err));
   }, []);
 
