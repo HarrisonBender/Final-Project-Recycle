@@ -313,6 +313,11 @@ pre {
 /* Footer */
 .footer .social a {
   margin: 0 10px;
+  position: absolute;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* Animations */
@@ -533,24 +538,24 @@ pre {
     text-align: center;
   }
   
-  /* Chirp */
-  .chirp {
+  /* Comment */
+  .comment {
     background-color: var(--light-color);
     padding: 10px 20px;
     font-weight: bold;
     margin: 15px 0;
   }
   
-  .chirp i {
+  .comment i {
     margin-right: 10px;
   }
   
-  .chirp-success {
+  .comment-success {
     
     color: var(--primary-color);
   }
   
-  .chirp-error {
+  .comment-error {
     background-color: var(--error-color);
     color:white;
   }

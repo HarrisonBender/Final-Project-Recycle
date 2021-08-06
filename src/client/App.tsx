@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Comments from "./components/Comments";
 import Locations from "./components/Locations";
-import About from "./components/About";
 import Footer from "./components/Footer";
 
 
@@ -21,9 +20,6 @@ export default function App() {
           </Route>
           <Route exact path="/locations">
             <Locations />
-          </Route>
-          <Route exact path="/about">
-            <About />
           </Route>
           <Route exact path="/comments">
             <Comments />

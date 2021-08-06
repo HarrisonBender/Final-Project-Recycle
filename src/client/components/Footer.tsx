@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
 
-
-
-<footer className="footer bg-primary py-3">
-        <div className="container grid grid-3">
+<>
+        <div className="footer container grid grid-3">
             <div>
                 <h1>RECYCLE PLUS +
                 </h1>
@@ -25,6 +23,5 @@ export default function Footer() {
                 <a href="#"><i className="bi-twitter"></i></a>
             </div>
         </div>
-    </footer>
-
+</>
   )};
