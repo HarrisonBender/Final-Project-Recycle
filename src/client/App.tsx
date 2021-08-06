@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Comments from "./components/Comments";
 import Locations from "./components/Locations";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -31,8 +32,8 @@ export default function App() {
             <LocationId />
           </Route> */}
         </Switch>
-
       </div>
+      <Footer />
     </Router>
   );
 
