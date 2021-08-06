@@ -180,7 +180,7 @@ export default function Comments() {
                     <div className="card-body">
                       <h5 className="card-title">{comments.name}</h5>
                       <h6 className="card-subtitle mb-2">
-                        Comment: {comments.content}
+                        {comments.content}
                       </h6>
                       
                     </div>

@@ -307,6 +307,11 @@ pre {
 /* Footer */
 .footer .social a {
   margin: 0 10px;
+  position: absolute;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* Animations */
