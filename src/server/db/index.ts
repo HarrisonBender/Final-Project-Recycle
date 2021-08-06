@@ -1,7 +1,7 @@
 import * as mysql from 'mysql';
 import config from '../config';
 
-import RecycleCenters from './recycleCenters';
+import RecycleCenters from './queries/recycleCenters';
 
 
 // export const Connection = mysql.createConnection(config.mysql);
