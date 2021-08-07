@@ -2,8 +2,8 @@ import { Query } from "./index";
 
 const post = async (name: string) => Query(`
 INSERT INTO Users (name) value (?);
-`, [name]);
+`,[name]);
 
 export default {
-    post
-}
+  post,
+};

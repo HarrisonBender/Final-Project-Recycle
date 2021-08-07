@@ -71,40 +71,37 @@ export default function Home() {
           {/* <a href="/locations" className="btn btn-outline">
             Read More
           </a> */}
-      <div className="container mz">
-        <h1 className="md stats-heading text-center my-3 py-5">
-          Recycle & Reuse
-        </h1>
+          <div className="container mz">
+            <h1 className="md stats-heading text-center my-3 py-5">
+              Recycle & Reuse
+            </h1>
 
-        <div className="grid grid-3 text-center ß">
-          <div>
-            {/* <i className="bi-trash" style="font-size: 2rem; color:green"></i> */}
-            <p>How Many Pieces Of Waste Recycled?</p>
-            <h3 className="text-dark mono">22,454,516 Pieces</h3>
-          </div>
-          <div>
-            {/* <i className="bi-recycle" style="font-size: 2rem; color:green"></i> */}
-            <p>How Many Recycle Centers In Alabama?</p>
-            <h3 className="text-dark mono">205 Across The State</h3>
-          </div>
-          <div>
-            {/* <i
+            <div className="grid grid-3 text-center ß">
+              <div>
+                {/* <i className="bi-trash" style="font-size: 2rem; color:green"></i> */}
+                <p>How Many Pieces Of Waste Recycled?</p>
+                <h3 className="text-dark mono">22,454,516 Pieces</h3>
+              </div>
+              <div>
+                {/* <i className="bi-recycle" style="font-size: 2rem; color:green"></i> */}
+                <p>How Many Recycle Centers In Alabama?</p>
+                <h3 className="text-dark mono">205 Across The State</h3>
+              </div>
+              <div>
+                {/* <i
               className="bi-emoji-smile"
               style="font-size: 2rem; color:green"
             ></i> */}
-            <p>
-              Come Be Part Of This Community Of Earthlings Doing Everything To
-              Save The Planet!
-            </p>
-            <h3 className="text-dark mono">1,232,124 Earthlings</h3>
+                <p>
+                  Come Be Part Of This Community Of Earthlings Doing Everything
+                  To Save The Planet!
+                </p>
+                <h3 className="text-dark mono">1,232,124 Earthlings</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
-
     </>
   );
 }
-
-

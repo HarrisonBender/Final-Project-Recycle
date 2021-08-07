@@ -3,19 +3,19 @@ import DB from "../db";
 
 const router = express.Router();
 
-router.get('/:id?', async (req, res) => {
-  const id = req.params.id
-//get one center
+router.get("/:id?", async (req, res) => {
+  const id = req.params.id;
+  //get one center
   if (id) {
-    try{
-      let recycleCenter = await DB.RecycleCenters.one(id)
-      res.json(recycleCenter)
+    try {
+      let recycleCenter = await DB.RecycleCenters.one(id);
+      res.json(recycleCenter);
     } catch (e) {
-      console.log(e)
-      res.sendStatus(500)
+      console.log(e);
+      res.sendStatus(500);
     }
   } else {
-//get all centers
+    //get all centers
     try {
       let recycleCenters = await DB.RecycleCenters.all();
       res.json(recycleCenters);
@@ -24,7 +24,7 @@ router.get('/:id?', async (req, res) => {
       res.sendStatus(500);
     }
   }
-})
+});
 
 // router.get('/api/centerMaterials', async (req, res) =>{
 
