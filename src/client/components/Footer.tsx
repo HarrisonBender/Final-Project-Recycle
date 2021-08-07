@@ -5,7 +5,7 @@ export default function Footer() {
   return (
 
 <>
-        <div className="footer container grid grid-3">
+        <div className="footer container grid grid-3 ">
             <div>
                 <h1>RECYCLE PLUS +
                 </h1>

@@ -15,7 +15,7 @@ router.get("/:id?", async (req, res) => {
   }
 });
 
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   const commentObj: comment = req.body;
 
   try {
@@ -29,6 +29,26 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.put("/:id?", async (req, res) => {
+  const id: string = req.params.id;
+  const newContent: string = req.body.content;
+
+  try {
+    await DB.Comments.put(id, newContent);
+
+    res.send("edited successfully");
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+// router.delete('/:id', (req, res) => {
+//   const id: string = req.params.id;
+
+//   DeleteComments(id);
+
+//   res.send("deleted successfully");
+// });
 
 interface comment {
   id?: string;

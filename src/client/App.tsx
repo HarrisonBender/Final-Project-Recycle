@@ -1,6 +1,7 @@
-import * as React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './scss/app';
+import * as React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./scss/app";
+// import './index';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Comments from "./components/Comments";
@@ -33,33 +34,38 @@ export default function App() {
     </Router>
   );
 
+  // async componentDidMount() {
+  // 	try {
 
-	// async componentDidMount() {
-	// 	try {
-		
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// }
-
-		
-	}
-
-interface IAppProps { }
-
-interface IAppState {
-	recycleCenters: Array<{ name: string, address: string, hours: string, id: number, countyid: number }>;
+  // 	} catch (error) {
+  // 		console.log(error);
+  // 	}
+  // }
 }
 
-{/* <main className="container my-5">
+interface IAppProps {}
+
+interface IAppState {
+  recycleCenters: Array<{
+    name: string;
+    address: string;
+    hours: string;
+    id: number;
+    countyid: number;
+  }>;
+}
+
+{
+  /* <main className="container my-5">
 				<h1 className="text-primary text-center">Recycle Centers</h1>
 				<ul className="list-group">
 					{this.state.recycleCenters.map(recycleCenter => {
 						return <li className="list-group-item">{recycleCenter.name}</li>
 					})}
 				</ul>
-			</main> */}
+			</main> */
+}
 
-			// let r = await fetch('/api/recycleCenters');
-			// let recycleCenters = await r.json();
-			// this.setState({ recycleCenters });
+// let r = await fetch('/api/recycleCenters');
+// let recycleCenters = await r.json();
+// this.setState({ recycleCenters });
