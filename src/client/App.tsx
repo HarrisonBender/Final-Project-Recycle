@@ -1,35 +1,36 @@
 import * as React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./scss/app";
-// import './index';
+// import './scss/index';
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Comments from "./components/Comments";
-import Locations from "./components/Locations";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Locations from "./components/Locations";
+import Comments from "./components/Comments";
+import Edit from "./components/Edit";
 
 
 export default function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
-
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/locations">
-            <Locations />
-          </Route>
-          <Route exact path="/comments">
-            <Comments />
-          </Route>
-          {/* <Route exact path="/locations/:locationid">
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/locations">
+          <Locations />
+        </Route>
+        {/* <Route exact path="/locations/:locationid">
             <LocationId />
           </Route> */}
-        </Switch>
-      </div>
+        <Route exact path="/comments">
+          <Comments />
+        </Route>
+        <Route exact path="/edit/:id">
+          <Edit />
+        </Route>
+      </Switch>
       <Footer />
     </Router>
   );

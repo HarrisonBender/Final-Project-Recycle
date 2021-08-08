@@ -1,7 +1,7 @@
 import { Query } from "./index";
 
 const all = async () => Query(`
-SELECT Comments.content, Users.name
+SELECT Comments.id, Comments.content, Users.name
 FROM Comments
 JOIN Users ON Comments.userid = Users.id;
 `);
@@ -23,9 +23,14 @@ SET content = ?
 WHERE Comments.id = ?; 
 `,[newContent, id]);
 
+const destroy = async (id: string) => Query (`
+DELETE FROM Comments WHERE Comments.id = ?;
+`, [id]);
+
 export default {
   all,
   one,
   post,
   put,
+  destroy
 };
