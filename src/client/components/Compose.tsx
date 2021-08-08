@@ -10,7 +10,7 @@ const Compose = () => {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
-            body: JSON.stringify({ name, content })
+            body: JSON.stringify({ name , content })
         };
         fetch('/api/Comments', requestOptions)
         .then(response => response.json())

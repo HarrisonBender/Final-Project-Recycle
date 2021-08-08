@@ -1,7 +1,7 @@
 import * as React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./scss/app";
-// import './scss/index';
+// import './scss/index'; only using temporary style sheet ftm! ^
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
