@@ -42,13 +42,17 @@ router.put("/:id?", async (req, res) => {
   }
 });
 
-// router.delete('/:id', (req, res) => {
-//   const id: string = req.params.id;
+router.delete('/:id', async (req, res) => {
+  const id: string = req.params.id;
 
-//   DeleteComments(id);
+  try {
+  await DB.Comments.destroy(id);
 
-//   res.send("deleted successfully");
-// });
+  res.send("deleted successfully");
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 interface comment {
   id?: string;
