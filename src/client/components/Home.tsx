@@ -31,9 +31,9 @@ export default function Home() {
     // </section>
 
     // </>
-
-    <section className="searchbox">
-      <div className="container grid space-between">
+    
+    <section className="searchbox grid">
+      <div className="container space-between">
         <div className="searchbox-form card text-center">
           <h2 className="mono">What and Where To Recycle!</h2>
           <form name="searchform" method="POST">

@@ -2,7 +2,7 @@ import * as mysql from 'mysql';
 import config from '../config';
 
 import RecycleCenters from './queries/recycleCenters';
-import Comments from "./Comments";
+import Comments from "./queries/Comments";
 
 
 // export const Connection = mysql.createConnection(config.mysql);
