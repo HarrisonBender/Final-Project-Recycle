@@ -2,6 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
+
+#submit-button{
+
+margin-left: 45rem;
+margin-right:45rem;
+}
+
+#name-input, #email-input{
+
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+#message-input{
+  margin-left:35rem;
+  margin-right:35rem;
+  height:6rem;
+
+}
+
 :root {
   --primary-color: #008000;
   --secondary-color: #b3e3ff;

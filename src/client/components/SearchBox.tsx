@@ -43,15 +43,7 @@ import React, { useEffect, useState } from "react";
           </div>
           <br></br>
 
-{/* zipcode not being used for this demonstration */}
-          {/* <div className="zip-input-wrap">
-            <input
-              type="numeric"
-              name="zip"
-              className="zip-input"
-              placeholder="Zip Code"
-            ></input>
-          </div> */}
+
 
           <br></br>
           <button type="submit" className="btn btn-primary" value="Recycle It!">

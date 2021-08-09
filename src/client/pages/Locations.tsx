@@ -38,7 +38,7 @@ export default function Locations() {
               <div className="card-body">
                 <h5 className="card-title">{locations.name}</h5>
                 <h6 className="card-subtitle mb-2">
-                  Address: {locations.address}
+                  Address: {locations.addr}
                 </h6>
                 <h6 className="card-subtitle mb-2">Hours: {locations.hours}</h6>
                 <h6 className="card-subtitle mb-2">

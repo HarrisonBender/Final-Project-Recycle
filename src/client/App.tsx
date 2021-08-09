@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Locations from "./pages/Locations";
 import Comments from "./pages/Comments";
 import Edit from "./components/Edit";
+import ContactForm from "./components/ContactForm";
 
 
 export default function App() {
@@ -26,6 +27,9 @@ export default function App() {
           </Route> */}
         <Route exact path="/comments">
           <Comments />
+        </Route>
+        <Route exact path="/contactform">
+          <ContactForm />
         </Route>
         <Route exact path="/edit/:id">
           <Edit />
