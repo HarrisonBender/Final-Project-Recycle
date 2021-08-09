@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Dropdown } from "bootstrap";
 
 // const SearchBox = ({ placeholder }) => {
   const SearchBox = () => {
@@ -25,7 +26,7 @@ import React, { useEffect, useState } from "react";
             <div className="searchInputs">
               {/* <input type="text" placeholder={placeholder}> */}
 
-              <form action="/action_page.php">
+              {/* <form action="/action_page.php">
                 <label htmlFor="materials">Choose a Material to Recycle:</label>
                 <select name="materials" id="materials">
                   <option value="plastic1">Plastics 1 + 2</option>
@@ -37,13 +38,13 @@ import React, { useEffect, useState } from "react";
                   <option value="electronics">Electronics</option>
                   <option value="paper">Mixed Papers</option>
                 </select>
-              </form>
+              </form> */}
             </div>
             <div className="dataResult"></div>
           </div>
           <br></br>
 
-{/* zipcode not being used for this demonstration */}
+          {/* zipcode not being used for this demonstration */}
           {/* <div className="zip-input-wrap">
             <input
               type="numeric"
@@ -52,6 +53,11 @@ import React, { useEffect, useState } from "react";
               placeholder="Zip Code"
             ></input>
           </div> */}
+
+          
+              <h5>{material.name}</h5>
+              <h6>{material.id}</h6>
+           
 
           <br></br>
           <button type="submit" className="btn btn-primary" value="Recycle It!">

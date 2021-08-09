@@ -47,9 +47,13 @@ const Home: React.FC<IHome> = () => {
           </p>
         </div>
 
-        <div className="card">
+        {/* <div className="card">
           <ContactForm />
-        </div>
+        </div> */}
+
+        <Link to={`/`} className="card-link">
+          <ContactForm />
+        </Link>
 
         <div className="card">
           <div className="comment comment-success text-center">
