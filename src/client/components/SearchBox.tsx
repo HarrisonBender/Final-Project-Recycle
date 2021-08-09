@@ -30,9 +30,9 @@ const SearchBox = () => {
             <div className="dropdown">
               <button className="dropbtn">Dropdown</button>
               <div className="dropdown-content">
-                <a href="/locationsPlastic">Plastics</a>
+                <a href="/locations/plastic">Plastics</a>
                 <a href="#">Mixed Paper</a>
-                <a href="#">Electronics</a>
+                <a href="/locations/electronics">Electronics</a>
               </div>
             </div>
 

@@ -9,6 +9,8 @@ import Locations from "./pages/Locations";
 import Comments from "./pages/Comments";
 import Edit from "./components/Edit";
 import ContactForm from "./components/ContactForm";
+import LocationsPlastic from "./components/LocationsPlastic";
+import LocationsElectronics from "./components/LocationsElectronics";
 
 
 export default function App() {
@@ -23,7 +25,10 @@ export default function App() {
           <Locations />
         </Route>
         <Route exact path="/locations/plastic">
-          <Locations />
+          <LocationsPlastic />
+        </Route>
+        <Route exact path="/locations/electronics">
+          <LocationsElectronics />
         </Route>
         <Route exact path="/comments">
           <Comments />
