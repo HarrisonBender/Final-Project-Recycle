@@ -29,7 +29,7 @@ const SearchBox = () => {
             <br></br>
 
             <div className="dropdown">
-              <button className="dropbtn">Dropdown</button>
+              <button className="btn btn-primary">Recycle it!</button>
               <div className="dropdown-content">
                 <a href="/locationsPlastic">Plastics</a>
                 <a href="#">Mixed Paper</a>
@@ -38,9 +38,9 @@ const SearchBox = () => {
             </div>
 
             <br></br>
-            <button type="submit" className="btn btn-primary" value="Recycle It!">
+            {/* <button type="submit" className="btn btn-primary" value="Recycle It!">
               Recycle It!
-          </button>
+          </button> */}
           </div>
           </div>
           </div>

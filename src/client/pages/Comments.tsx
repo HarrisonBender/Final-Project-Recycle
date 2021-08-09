@@ -64,7 +64,7 @@ const Home: React.FC<IHome> = () => {
           <h2>Contact US!</h2>
           <h6>Tell us about your upcoming events!</h6>
         <form method="get" action="/contactform">
-    <button type="submit">Contact Us!</button>
+    <button className="btn btn-primary" type="submit">Contact Us!</button>
 </form>
         </div>
 
