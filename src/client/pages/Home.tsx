@@ -1,37 +1,15 @@
 import React from "react";
 import { Recycle, Trash, EmojiSmile } from "react-bootstrap-icons";
+import SearchBox from "../components/SearchBox";
 
 export default function Home() {
   return (
     <>
       <div className="container grid space-between">
-        <div className="searchbox-form card text-center">
-          <h2 className="mono">What and Where To Recycle!</h2>
-          <br></br>
-          <form name="searchform" method="POST">
-            <input
-              type="text"
-              name="name"
-              placeholder="Material"
-              required
-            ></input>
-            <br></br>
-            <br></br>
-            <input
-              type="text"
-              name="company"
-              placeholder="Zip Code"
-              required
-            ></input>
-            <br></br>
-            <br></br>
-            <input
-              type="submit"
-              value="Recycle It!"
-              className="btn btn-primary"
-            ></input>
-          </form>
-        </div>
+        
+        {/* <SearchBox placeholder="Enter Material Here..."/> */}
+        <SearchBox />
+
         <div className="searchbox-text">
           <h1>Make The World A Better Place!</h1>
           <p>

@@ -4,6 +4,7 @@ import config from "../config";
 import RecycleCenters from "./recycleCenters";
 import Comments from "./Comments";
 import Users from "./Users";
+import materials from "./materials";
 
 const pool = mysql.createPool(config.mysql);
 
@@ -25,4 +26,5 @@ export default {
   RecycleCenters,
   Comments,
   Users,
+  materials,
 };

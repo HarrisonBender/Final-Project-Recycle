@@ -77,6 +77,19 @@ pre {
   font-family: "Space Mono", sans-serif;
 }
 
+div.locations-map {
+  height:400px;
+  // border:2px  #eee;
+  display:inline-block;
+  overflow:hidden;
+}
+
+iframe {
+  position:relative;
+  top:-55px;
+  border:none;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
@@ -132,7 +145,7 @@ pre {
   position: relative;
   // top: 60px;
   top: 21px;
-  // left: 20rem;
+  left: 20rem;
   height: 350px;
   width: 400px;
   padding: 40px;
@@ -141,12 +154,33 @@ pre {
   animation: slideInFromTop 1s ease-in;
 }
 
+// added with the new search still in editing mode!
+.home-recycle-search {
+  text-align: center;
+}
+
+.home-recycle-search .search-wrap {
+    background-color: #fff;
+    border-radius: 0.4em;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em 0.5em 0.75em 0.5em;
+    font-size: 2.2rem;
+    color: #aaa;
+}
+//styling for zip code input box!
+input.zip-input {
+  border: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
 .searchbox-form .form-control {
   margin: 30px 0;
 }
 
-.searchbox-form input[type="text"],
-.searchbox-form input[type="email"] {
+.searchbox-form input[type="text"] {
   border: 1px solid #b4becb;
   width: 100%;
   padding: 3px;
