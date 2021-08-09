@@ -19,10 +19,9 @@ router.post("/", async (req, res) => {
   const contactformObj: contactform = req.body;
 
   try {
-    const newContactForm = await DB.Users.post(contactformObj.name);
+    const newContactForm =  DB.ContactForm.post(contactformObj.name, contactformObj.email, contactformObj.content);
 
-    await DB.Comments.post(newContactForm.insertId, contactformObj.content);
-
+  
     res.send("success");
   } catch (error) {
     console.log(error);
@@ -32,8 +31,8 @@ router.post("/", async (req, res) => {
 
 
 interface contactform {
-  id?: string;
   name: string;
+  email: string;
   content: string;
 }
 

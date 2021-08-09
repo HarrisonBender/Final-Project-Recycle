@@ -12,7 +12,7 @@ FROM Comments
 
 const post = (name: string, email: string, content: string) => Query(`
 INSERT INTO ContactForm (name, email, content) values (?, ?, ?)
-`,[name,email, content]);
+`,[name, email, content]);
 
 
 

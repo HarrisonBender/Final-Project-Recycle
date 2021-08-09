@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 
 
 const ContactForm = () => {
+  let history = useHistory();
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [content, setContent] = useState<string>("");
@@ -13,9 +14,14 @@ const ContactForm = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, content }),
-    };
+    };  
     fetch("/api/ContactForm", requestOptions);
+    goHome();
   };
+
+  function goHome() {
+    history.push("/comments");
+}
 
   return (
     <>
@@ -37,7 +43,7 @@ const ContactForm = () => {
           type="text"
           id="email-input"
           placeholder="Email"
-          value={name}
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
         

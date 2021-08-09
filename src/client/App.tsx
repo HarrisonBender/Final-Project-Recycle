@@ -22,9 +22,9 @@ export default function App() {
         <Route exact path="/locations">
           <Locations />
         </Route>
-        {/* <Route exact path="/locations/:locationid">
-            <LocationId />
-          </Route> */}
+        <Route exact path="/locations/plastic">
+          <Locations />
+        </Route>
         <Route exact path="/comments">
           <Comments />
         </Route>
@@ -74,3 +74,7 @@ interface IAppState {
 // let r = await fetch('/api/recycleCenters');
 // let recycleCenters = await r.json();
 // this.setState({ recycleCenters });
+
+ {/* <Route exact path="/locations/:locationid">
+            <LocationId />
+          </Route> */}
