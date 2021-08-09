@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Dropdown } from "bootstrap";
 
 // const SearchBox = ({ placeholder }) => {
 const SearchBox = () => {
@@ -28,7 +29,7 @@ const SearchBox = () => {
             <br></br>
 
             <div className="dropdown">
-              <button className="dropbtn">Dropdown</button>
+              <button className="btn btn-primary">Recycle it!</button>
               <div className="dropdown-content">
                 <a href="/locations/plastic">Plastics</a>
                 <a href="#">Mixed Paper</a>
@@ -37,9 +38,9 @@ const SearchBox = () => {
             </div>
 
             <br></br>
-            <button type="submit" className="btn btn-primary" value="Recycle It!">
+            {/* <button type="submit" className="btn btn-primary" value="Recycle It!">
               Recycle It!
-          </button>
+          </button> */}
           </div>
           </div>
           </div>
@@ -63,7 +64,7 @@ export default SearchBox;
                   <option value="electronics">Electronics</option>
                   <option value="paper">Mixed Papers</option>
                 </select>
-              </form>
-            </div>
-            <div className="dataResult"></div>
-          </div> */}
+              </form> */}
+          //   </div>
+          //   <div className="dataResult"></div>
+          // </div> */}
