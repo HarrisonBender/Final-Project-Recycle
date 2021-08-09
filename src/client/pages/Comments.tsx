@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import CommentCard from "../components/CommentCard";
 import Compose from "../components/Compose";
 import { Recycle } from "react-bootstrap-icons";
-import ContactForm from "../components/ContactForm";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 const Home: React.FC<IHome> = () => {
   const [comments, setComments] = useState([]);
@@ -18,6 +19,18 @@ const Home: React.FC<IHome> = () => {
       .then((comments) => setComments(comments))
       .catch((err) => console.error(err));
   }
+  const [contactform, setContactForm] = useState([]);
+
+  // useEffect(() => {
+  //   fetchContactForm();
+  // }, []);
+
+  // const fetchContactForm = () => {
+  //   fetch("/api/ContactForm")
+  //     .then((res) => res.json())
+  //     .then((contactform) => setContactForm(contactform))
+  //     .catch((err) => console.error(err));
+  // }
 
   return (
     <section className="comments-head py-3">
@@ -47,13 +60,13 @@ const Home: React.FC<IHome> = () => {
           </p>
         </div>
 
-        {/* <div className="card">
-          <ContactForm />
-        </div> */}
-
-        <Link to={`/`} className="card-link">
-          <ContactForm />
-        </Link>
+        <div className="card">
+          <h2>Contact US!</h2>
+          <h6>Tell us about your upcoming events!</h6>
+        <form method="get" action="/contactform">
+    <button type="submit">Contact Us!</button>
+</form>
+        </div>
 
         <div className="card">
           <div className="comment comment-success text-center">

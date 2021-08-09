@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Locations from "./pages/Locations";
 import Comments from "./pages/Comments";
 import Edit from "./components/Edit";
+import ContactForm from "./components/ContactForm";
 
 
 export default function App() {
@@ -21,11 +22,14 @@ export default function App() {
         <Route exact path="/locations">
           <Locations />
         </Route>
-        {/* <Route exact path="/locations/:locationid">
-            <LocationId />
-          </Route> */}
+        <Route exact path="/locations/plastic">
+          <Locations />
+        </Route>
         <Route exact path="/comments">
           <Comments />
+        </Route>
+        <Route exact path="/contactform">
+          <ContactForm />
         </Route>
         <Route exact path="/edit/:id">
           <Edit />
@@ -70,3 +74,7 @@ interface IAppState {
 // let r = await fetch('/api/recycleCenters');
 // let recycleCenters = await r.json();
 // this.setState({ recycleCenters });
+
+ {/* <Route exact path="/locations/:locationid">
+            <LocationId />
+          </Route> */}
