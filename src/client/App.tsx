@@ -4,9 +4,9 @@ import "./scss/app";
 // import './scss/index'; only using temporary style sheet ftm! ^
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Locations from "./components/Locations";
-import Comments from "./components/Comments";
+import Home from "./pages/Home";
+import Locations from "./pages/Locations";
+import Comments from "./pages/Comments";
 import Edit from "./components/Edit";
 
 

@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import CommentCard from "./CommentCard";
-import Compose from "./Compose";
+import CommentCard from "../components/CommentCard";
+import Compose from "../components/Compose";
 import { Recycle } from "react-bootstrap-icons";
+import ContactForm from "../components/ContactForm";
+
 const Home: React.FC<IHome> = () => {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
+    fetchComments();
+  }, []);
+
+  const fetchComments = () => {
     fetch("/api/Comments")
       .then((res) => res.json())
       .then((comments) => setComments(comments))
       .catch((err) => console.error(err));
-  }, []);
+  }
 
   return (
     <section className="comments-head py-3">
@@ -40,6 +46,11 @@ const Home: React.FC<IHome> = () => {
             <br></br>
           </p>
         </div>
+
+        <div className="card">
+          <ContactForm />
+        </div>
+
         <div className="card">
           <div className="comment comment-success text-center">
             <Recycle color="green" size={50} />
@@ -48,7 +59,7 @@ const Home: React.FC<IHome> = () => {
             </div>
 
             <div>
-              <Compose></Compose>
+              <Compose fetchComments={fetchComments} />
             </div>
 
             <div className="container">

@@ -5,33 +5,25 @@ const router = express.Router();
 
 router.get("/:id?", async (req, res) => {
   const id = req.params.id;
-  //get one center
+  //get one material
   if (id) {
     try {
-      let recycleCenter = await DB.RecycleCenters.one(id);
-      res.json(recycleCenter);
+      let materials = await DB.materials.one(id);
+      res.json(materials);
     } catch (e) {
       console.log(e);
       res.sendStatus(500);
     }
   } else {
-    //get all centers
+    //get all materials
     try {
-      let recycleCenters = await DB.RecycleCenters.all(id);
-      res.json(recycleCenters);
+      let materials = await DB.materials.all(id);
+      res.json(materials);
     } catch (e) {
       console.log(e);
       res.sendStatus(500);
     }
   }
 });
-
-// router.get('/api/centerMaterials', async (req, res) =>{
-
-// })
-
-// router.get('/api/county', async (req, res) =>{
-
-// })
 
 export default router;
