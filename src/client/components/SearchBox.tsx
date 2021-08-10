@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown } from "bootstrap";
+import { Link } from "react-router-dom";
 
 // const SearchBox = ({ placeholder }) => {
 const SearchBox = () => {
@@ -31,16 +32,9 @@ const SearchBox = () => {
             <div className="dropdown">
               <button className="btn btn-primary">Recycle it!</button>
               <div className="dropdown-content">
-                <a href="/locations/aluminum">Aluminum</a>
-                <a href="/locations/paper">Mixed Papers</a>
-                <a href="/locations/metalfoodcans">Metal Food Cans</a>
-                <a href="/locations/plastic">Plastics</a>
-                <a href="/locations/batteries">Batteries</a>
-                <a href="/locations/scrapmetal">Scrap Metal</a>
-                <a href="/locations/glass">Glass</a>
-                <a href="/locations/electronics">Electronics</a>
-                <a href="/locations/cork">Cork</a>
-                <a href="/locations/clothingtextiles">Clothing/Textiles</a>
+                {material.map((material) => (
+                  <Link to={`/locations/${material.id}`}>{material.name}</Link>
+                ))}
               </div>
             </div>
 

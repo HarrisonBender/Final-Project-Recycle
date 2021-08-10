@@ -1,20 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function Locations() {
+  const { id } = useParams();
   const [locations, setLocations] = useState([]);
+  const [material, setMaterial] = useState(null);
 
   useEffect(() => {
-    fetch("/api/centerMaterials")
+    fetch(`/api/centerMaterials/${id}`)
       .then((res) => res.json())
       .then((locations) => setLocations(locations))
+      .catch((err) => console.error(err));
+      console.log(id)
+  }, []);
+
+  useEffect(() => {
+    fetch(`/api/materials/${id}`)
+      .then((res) => res.json())
+      .then((material) => setMaterial(material))
       .catch((err) => console.error(err));
   }, []);
 
 
   return (
     <>
-      <h1 className="location-title">Locations Accepting Clothing & Textiles</h1>
+      <h1 className="location-title">Locations Accepting {material?.name}</h1>
       
      
       <div className="container-fluid text-center">
@@ -29,24 +39,24 @@ export default function Locations() {
 
       <div className="container">
         <div className="row justify-content-around">
-          {locations.map((locations) => (
+          {locations.map((location, index) => (
             <div
-              key={locations.id}
+              key={id}
               className="card my-3"
               style={{ width: "24rem" }}
             >
               <div className="card-body">
-                <h5 className="card-title">{locations.name}</h5>
+                <h5 className="card-title">{locations?.name}</h5>
                 <h6 className="card-subtitle mb-2">
-                  Address: {locations.addr}
+                  Address: {locations?.addr}
                 </h6>
-                <h6 className="card-subtitle mb-2">Hours: {locations.hours}</h6>
+                <h6 className="card-subtitle mb-2">Hours: {locations?.hours}</h6>
+                {/* <h6 className="card-subtitle mb-2">
+                  Materials Accepted: {locations?.materials}
+                </h6>
                 <h6 className="card-subtitle mb-2">
-                  Materials Accepted: {locations.materials}
-                </h6>
-                <h6 className="card-subtitle mb-2">
-                  County: {locations.county}
-                </h6>
+                  County: {locations?.county}
+                </h6> */}
               </div>
             </div>
           ))}
