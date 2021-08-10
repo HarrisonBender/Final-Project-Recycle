@@ -8,7 +8,7 @@ export default function Footer() {
       {/* <div className="footer container grid grid-3 bg-success text-color-light"> */}
       <div className="footer grid grid-3">
         <div className="container-flex">
-          <h1>RECYCLE PLUS +</h1>
+          <h1>RECYCLE +</h1>
           <p>Copyright &copy; 2021</p>
         </div>
         <nav>

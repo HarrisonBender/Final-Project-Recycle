@@ -19,11 +19,11 @@ export default function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/locations">
-          <Locations />
-        </Route>
         <Route exact path="/locations/:id">
           <LocationsMaterials />
+        </Route>
+        <Route exact path="/locations">
+          <Locations />
         </Route>
         <Route exact path="/comments">
           <Comments />
@@ -78,3 +78,34 @@ interface IAppState {
  {/* <Route exact path="/locations/:locationid">
             <LocationId />
           </Route> */}
+
+             {/* <Route exact path="/locations/plastic">
+          <LocationsPlastic />
+        </Route>
+        <Route exact path="/locations/electronics">
+          <LocationsElectronics />
+        </Route>
+        <Route exact path="/locations/aluminum">
+          <LocationsAluminum />
+        </Route>
+        <Route exact path="/locations/paper">
+          <LocationsPaper />
+        </Route>
+        <Route exact path="/locations/metalfoodcans">
+          <LocationsMetalCans />
+        </Route>
+        <Route exact path="/locations/batteries">
+          <LocationsBatteries />
+        </Route>
+        <Route exact path="/locations/scrapmetal">
+          <LocationsScrapMetal />
+        </Route>
+        <Route exact path="/locations/glass">
+          <LocationsGlass />
+        </Route>
+        <Route exact path="/locations/cork">
+          <LocationsCork />
+        </Route>
+        <Route exact path="/locations/clothingtextiles">
+          <LocationsClothing />
+        </Route> */}

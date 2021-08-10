@@ -7,8 +7,7 @@ router.get("/materialsByCenter/:id", async (req, res) => {
   const id = req.params.id;
   let materialNames = await DB.centerMaterials.getMaterialsByCenter(id);
   res.json(materialNames);
-});
-
+})
 
 router.get("/:id?", async (req, res) => {
   const id = req.params.id;
@@ -30,5 +29,6 @@ router.get("/:id?", async (req, res) => {
     }
   }
 });
+
 
 export default router;

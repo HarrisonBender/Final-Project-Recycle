@@ -5,7 +5,9 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="container flex">
-        <h1 className="logo">RECYCLE PLUS +</h1>
+        <Link to='/'>
+          <h1 className="logo">RECYCLE +</h1>
+        </Link>
         <nav>
           <ul>
             <li>

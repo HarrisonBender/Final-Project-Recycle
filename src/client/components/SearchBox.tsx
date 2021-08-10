@@ -32,9 +32,7 @@ const SearchBox = () => {
             <div className="dropdown">
               <button className="btn btn-primary">Recycle it!</button>
               <div className="dropdown-content">
-                {material.map((material) => (
-                  <Link to={`/locations/${material.id}`}>{material.name}</Link>
-                ))}
+                {material.map(material => <Link to={`/locations/${material.id}`}>{material.name}</Link>)}
               </div>
             </div>
 
@@ -69,3 +67,12 @@ export default SearchBox;
           //   </div>
           //   <div className="dataResult"></div>
           // </div> */}
+            {/* <Link to="/locations/2">Mixed Papers</Link>
+                <Link to="/locations/3">Metal Food Cans</Link>
+                <Link to="/locations/4">Plastics</Link>
+                <Link to="/locations/5">Batteries</Link>
+                <Link to="/locations/6">Scrap Metal</Link>
+                <Link to="/locations/7">Glass</Link>
+                <Link to="/locations/8">Electronics</Link>
+                <Link to="/locations/9">Cork</Link>
+                <Link to="/locations/10">Clothing/Textiles</Link> */}

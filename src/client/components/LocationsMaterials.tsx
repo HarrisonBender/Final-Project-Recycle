@@ -11,7 +11,7 @@ export default function Locations() {
       .then((res) => res.json())
       .then((locations) => setLocations(locations))
       .catch((err) => console.error(err));
-      console.log(id)
+    console.log(id)
   }, []);
 
   useEffect(() => {
@@ -25,8 +25,8 @@ export default function Locations() {
   return (
     <>
       <h1 className="location-title">Locations Accepting {material?.name}</h1>
-      
-     
+
+
       <div className="container-fluid text-center">
         <div className="locations-map">
           <iframe
@@ -46,20 +46,15 @@ export default function Locations() {
               style={{ width: "24rem" }}
             >
               <div className="card-body">
-                <h5 className="card-title">{locations?.name}</h5>
+                <h5 className="card-title">{location?.name}</h5>
                 <h6 className="card-subtitle mb-2">
-                  Address: {locations?.addr}
+                  Address: {location?.addr}
                 </h6>
-                <h6 className="card-subtitle mb-2">Hours: {locations?.hours}</h6>
-                {/* <h6 className="card-subtitle mb-2">
-                  Materials Accepted: {locations?.materials}
-                </h6>
-                <h6 className="card-subtitle mb-2">
-                  County: {locations?.county}
-                </h6> */}
+                <h6 className="card-subtitle mb-2">Hours: {location?.hours}</h6>
               </div>
             </div>
-          ))}
+          )
+          )}
         </div>
       </div>
     </>

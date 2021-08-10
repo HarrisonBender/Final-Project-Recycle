@@ -10,15 +10,13 @@ SELECT * FROM centerMaterials WHERE materials.id = ?;
 const getCenter = ( id: string) => Query (`
 select recycleCenters.name, recycleCenters.addr, recycleCenters.hours, recycleCenters.countyid 
 from recycleCenters
-join centermaterials on recycleCenters.id = centerid
-where centerMaterials.materialsid = ?
-`, [id]);
+join centerMaterials on recycleCenters.id = centerid
+where centerMaterials.materialsid = ?;
+`, [id])
 
-const getMaterialsByCenter = (id: string) => Query(`
-select materials.id, materials.name from materials
+const getMaterialsByCenter = (id: string) => Query(`select materials.id, materials.name from materials
 join centerMaterials on centerMaterials.materialsid = materials.id
-where centerMaterials.centerid = ?
-`,[id]);
+where centerMaterials.centerid = ?`, [id])
 
 
 export default {
