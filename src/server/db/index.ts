@@ -2,7 +2,7 @@ import * as mysql from "mysql";
 import config from "../config";
 
 import RecycleCenters from "./recycleCenters";
-import Comments from "./comments";
+import Comments from "./Comments";
 import Users from "./Users";
 import materials from "./materials";
 import ContactForm from "./ContactForm";

@@ -15,8 +15,11 @@ FROM recycleCenters
 JOIN county ON county.id = recycleCenters.countyid;
 `, [id]);
 
+const getMaterials = (id: string) => Query(`CALL spcenterMaterials(?)`, [id]);
+
 export default {
   all,
   one,
+  getMaterials
   // findSomeByMaterial
 };

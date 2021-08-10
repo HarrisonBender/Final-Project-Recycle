@@ -22,7 +22,7 @@ router.get("/:id?", async (req, res) => {
     }
   } else {
     try {
-      const recycleCenters = await db.RecycleCenters.all();
+      const recycleCenters = await db.RecycleCenters.all(id);
       const materials = await db.RecycleCenters.getMaterials(id);
       const centerAndMaterials = {
         center: recycleCenters[0],

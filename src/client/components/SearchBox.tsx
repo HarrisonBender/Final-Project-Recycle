@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown } from "bootstrap";
+import { Link } from "react-router-dom";
 
 // const SearchBox = ({ placeholder }) => {
 const SearchBox = () => {
@@ -31,16 +32,7 @@ const SearchBox = () => {
             <div className="dropdown">
               <button className="btn btn-primary">Recycle it!</button>
               <div className="dropdown-content">
-                <a href="/locations/aluminum">Aluminum</a>
-                <a href="/locations/paper">Mixed Papers</a>
-                <a href="/locations/metalfoodcans">Metal Food Cans</a>
-                <a href="/locations/plastic">Plastics</a>
-                <a href="/locations/batteries">Batteries</a>
-                <a href="/locations/scrapmetal">Scrap Metal</a>
-                <a href="/locations/glass">Glass</a>
-                <a href="/locations/electronics">Electronics</a>
-                <a href="/locations/cork">Cork</a>
-                <a href="/locations/clothingtextiles">Clothing/Textiles</a>
+                {material.map(material => <Link to={`/locations/${material.id}`}>{material.name}</Link>)}
               </div>
             </div>
 
@@ -75,3 +67,12 @@ export default SearchBox;
           //   </div>
           //   <div className="dataResult"></div>
           // </div> */}
+            {/* <Link to="/locations/2">Mixed Papers</Link>
+                <Link to="/locations/3">Metal Food Cans</Link>
+                <Link to="/locations/4">Plastics</Link>
+                <Link to="/locations/5">Batteries</Link>
+                <Link to="/locations/6">Scrap Metal</Link>
+                <Link to="/locations/7">Glass</Link>
+                <Link to="/locations/8">Electronics</Link>
+                <Link to="/locations/9">Cork</Link>
+                <Link to="/locations/10">Clothing/Textiles</Link> */}
