@@ -3,12 +3,18 @@ import DB from "../db";
 
 const router = express.Router();
 
+router.get("/materialsByCenter/:id", async (req, res) => {
+  const id = req.params.id;
+  let materialNames = await DB.centerMaterials.getMaterialsByCenter(id);
+  res.json(materialNames);
+})
+
 router.get("/:id?", async (req, res) => {
   const id = req.params.id;
   //get one material
   if (id) {
     try {
-      let centerMaterials = await DB.centerMaterials.one(id);
+      let centerMaterials = await DB.centerMaterials.getCenter(id);
       res.json(centerMaterials);
     } catch (e) {
       console.log(e);
@@ -25,5 +31,6 @@ router.get("/:id?", async (req, res) => {
     }
   }
 });
+
 
 export default router;

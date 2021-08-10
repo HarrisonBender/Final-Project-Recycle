@@ -9,7 +9,7 @@ router.get("/:id?", async (req, res) => {
   if (id) {
     try {
       let materials = await DB.materials.one(id);
-      res.json(materials);
+      res.json(materials[0]);
     } catch (e) {
       console.log(e);
       res.sendStatus(500);
