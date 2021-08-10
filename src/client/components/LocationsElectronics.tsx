@@ -14,7 +14,7 @@ export default function Locations() {
 
   return (
     <>
-      <h1 className="location-title">Locations Accepting Eletronics</h1>
+      <h1 className="location-title">Locations Accepting Electronics</h1>
       
      
       <div className="container-fluid text-center">

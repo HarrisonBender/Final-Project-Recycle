@@ -26,7 +26,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="d-flex text-center justify-content-center card">
+      <div className="d-flex text-center justify-content-center card" id="contact-card">
         <h2 className="mono">Contact Us!</h2>
         <h6 className="mono">Have a suggestion, comment or upcoming event you would like to tell us directly? Reach out with your name, email and message. We are so happy to hear from you!</h6>
         

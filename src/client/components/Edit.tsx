@@ -41,7 +41,7 @@ const Edit = () => {
 
     return (
       <>
-        <div className="col-12 d-flex text-center justify-content-center card">
+        <div className="d-flex text-center justify-content-center card" id="edit-card">
           <div className="row-12">
             <br></br>
             <label>{comment.name}: </label>

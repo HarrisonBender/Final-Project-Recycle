@@ -5,20 +5,20 @@
 
 #submit-button{
 
-margin-left: 45rem;
-margin-right:45rem;
+margin-left: 22rem;
+margin-right:22rem;
 }
 
 #name-input, #email-input{
 
-  margin-left: 35rem;
-  margin-right: 35rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 #message-input{
-  margin-left:35rem;
-  margin-right:35rem;
-  height:6rem;
+  margin-left:20rem;
+  margin-right:20rem;
+  height:8rem;
 
 }
 
@@ -565,7 +565,7 @@ h1.location-title {
 
 /* Comment */
 .comment {
-  background-color: var(--light-color);
+  // background-color: var(--light-color);
   padding: 10px 20px;
   font-weight: bold;
   margin: 15px 0;
@@ -725,3 +725,40 @@ div.searchbox-text {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+#edit-card {
+  margin-left: 40rem;
+    margin-right: 40rem;
+    margin-top: 17.5rem;
+    margin-bottom: 17.5rem;
+}
+
+#comments-text {
+  text-align: center;
+}
+
+#contact-card {
+  margin-left: 25rem;
+    margin-right: 25rem;
+    margin-top: 11.5rem;
+    margin-bottom: 11.6rem;
+}
+
+  #upcoming-events {
+        margin-right: 18rem;
+    margin-left: 14rem;
+  }
+
+
+  #contactuscard {
+    margin-left: 57rem;
+    bottom: -2rem;
+    right: 67rem;
+  }
+
+  #upcomingeventscard {
+    left: -14rem;
+    margin-right: 30rem;
+    top: 2rem;
+    margin-left: 4rem
+  }

@@ -33,7 +33,7 @@ const Home: React.FC<IHome> = () => {
   // }
 
   return (
-    <section className="comments-head py-3">
+    <section className="comments-head py-3" id="comments-text">
       <div className="container grid">
         <div>
           <h1 className="xl">Earthling Community</h1>
@@ -44,43 +44,53 @@ const Home: React.FC<IHome> = () => {
         </div>
       </div>
 
-      <div className="comments-main my-4">
-        <div className="card">
+      <div className="comments-main my-4" id="upcoming-events">
+        <div className="card" id="upcomingeventscard">
           <h2 className="mono">Upcoming Events</h2>
           <p>
             August 7th 2021: Pick It Up! - Volunteers are encouraged to pick up
             at least one piece of trash and recycle it if possible!
             <br></br>
+            <br></br>
             March 22nd 2022: Habitat for Humanity - Volunteers will gather to
             remodel some houses for those in need.
+            <br></br>
             <br></br>
             April 20th 2022: Earth Day - National Earth Day! Show how much you
             love your planet!
             <br></br>
+            <br></br>
           </p>
         </div>
 
-        <div className="card">
+        <div className="card" id="contactuscard">
           <h2>Contact US!</h2>
           <h6>Tell us about your upcoming events!</h6>
-        <form method="get" action="/contactform">
-    <button className="btn btn-primary" type="submit">Contact Us!</button>
-</form>
+          <form method="get" action="/contactform">
+            <button className="btn btn-primary" type="submit">
+              Contact Us!
+            </button>
+          </form>
         </div>
 
-        <div className="card">
-          <div className="comment comment-success text-center">
+        
+        <div>
+          <div
+            className="comment comment-success text-center"
+            id="community-section"
+          >
             <Recycle color="green" size={50} />
             <div className="bi-recycle">
               Let Us Know How You GET YOUR RECYCLE ON!!
             </div>
-
+            <br></br>
             <div>
               <Compose fetchComments={fetchComments} />
             </div>
-
+            <br></br>
+            <br></br>
             <div className="container">
-              <h3 className="mono">Earthling Community</h3>
+              <h1 className="mono">Earthling Community</h1>
               <div className="row justify-content-center align-items-center">
                 {comments.map((comment) => (
                   <CommentCard key={comment.id} comment={comment} />
@@ -90,6 +100,7 @@ const Home: React.FC<IHome> = () => {
           </div>
         </div>
       </div>
+
     </section>
   );
 };
