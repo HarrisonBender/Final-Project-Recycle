@@ -9,9 +9,16 @@ import Locations from "./pages/Locations";
 import Comments from "./pages/Comments";
 import Edit from "./components/Edit";
 import ContactForm from "./components/ContactForm";
-import LocationsPlastic from "./components/LocationsPlastic";
-import LocationsElectronics from "./components/LocationsElectronics";
-
+import LocationsPlastic from "./components/Locations/LocationsPlastic";
+import LocationsElectronics from "./components/Locations/LocationsElectronics";
+import LocationsAluminum from "./components/Locations/LocationsAluminum";
+import LocationsPaper from "./components/Locations/LocationsPaper";
+import LocationsMetalCans from "./components/Locations/LocationsMetalCans";
+import LocationsBatteries from "./components/Locations/LocationsBatteries";
+import LocationsScrapMetal from "./components/Locations/LocationsScrapMetal";
+import LocationsGlass from "./components/Locations/LocationsGlass";
+import LocationsCork from "./components/Locations/LocationsCork";
+import LocationsClothing from "./components/Locations/LocationsClothing";
 
 export default function App() {
   return (
@@ -29,6 +36,30 @@ export default function App() {
         </Route>
         <Route exact path="/locations/electronics">
           <LocationsElectronics />
+        </Route>
+        <Route exact path="/locations/aluminum">
+          <LocationsAluminum />
+        </Route>
+        <Route exact path="/locations/paper">
+          <LocationsPaper />
+        </Route>
+        <Route exact path="/locations/metalfoodcans">
+          <LocationsMetalCans />
+        </Route>
+        <Route exact path="/locations/batteries">
+          <LocationsBatteries />
+        </Route>
+        <Route exact path="/locations/scrapmetal">
+          <LocationsScrapMetal />
+        </Route>
+        <Route exact path="/locations/glass">
+          <LocationsGlass />
+        </Route>
+        <Route exact path="/locations/cork">
+          <LocationsCork />
+        </Route>
+        <Route exact path="/locations/clothingtextiles">
+          <LocationsClothing />
         </Route>
         <Route exact path="/comments">
           <Comments />

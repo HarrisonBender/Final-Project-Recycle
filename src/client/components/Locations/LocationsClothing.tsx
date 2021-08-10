@@ -5,7 +5,7 @@ export default function Locations() {
   const [locations, setLocations] = useState([]);
 
   useEffect(() => {
-    fetch("/api/centerMater")
+    fetch("/api/centerMaterials")
       .then((res) => res.json())
       .then((locations) => setLocations(locations))
       .catch((err) => console.error(err));
@@ -14,7 +14,7 @@ export default function Locations() {
 
   return (
     <>
-      <h1 className="location-title">Locations Accepting Electronics</h1>
+      <h1 className="location-title">Locations Accepting Clothing & Textiles</h1>
       
      
       <div className="container-fluid text-center">
