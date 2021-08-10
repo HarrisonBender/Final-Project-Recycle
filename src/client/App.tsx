@@ -9,7 +9,7 @@ import Locations from "./pages/Locations";
 import Comments from "./pages/Comments";
 import Edit from "./components/Edit";
 import ContactForm from "./components/ContactForm";
-import LocationsMaterials from "./components/Locations/LocationsMaterials";
+import LocationsMaterials from "./components/LocationsMaterials";
 
 
 export default function App() {
