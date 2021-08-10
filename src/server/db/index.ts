@@ -1,33 +1,34 @@
-import * as mysql from 'mysql';
-import config from '../config';
+import * as mysql from "mysql";
+import config from "../config";
 
-import RecycleCenters from './queries/recycleCenters';
-import Comments from "./queries/Comments";
+import RecycleCenters from "./recycleCenters";
+import Comments from "./comments";
+import Users from "./Users";
+import materials from "./materials";
+import ContactForm from "./ContactForm";
+import centerMaterials from "./centerMaterials";
 
-
-// export const Connection = mysql.createConnection(config.mysql);
-
-// Connection.connect(err => {
-//     if(err) console.log(err);
-// });
-
-const pool = mysql.createPool(config.mysql)
+const pool = mysql.createPool(config.mysql);
 
 export const Query = <T = any>(query: string, values?: any) => {
-    const sql = mysql.format(query, values);
+  const sql = mysql.format(query, values);
 
-    return new Promise<T>((resolve, reject) => {
-        pool.query(sql, (err, results) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve(results)
-            }
-        })
-    })
-}
+  return new Promise<T>((resolve, reject) => {
+    pool.query(sql, (err, results) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(results);
+      }
+    });
+  });
+};
 
 export default {
-    RecycleCenters,
-    Comments
-}
+  RecycleCenters,
+  Comments,
+  Users,
+  materials,
+  ContactForm,
+  centerMaterials
+};
