@@ -6,12 +6,12 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <Link to="/">
-          <h1 className="logo">
+          <h1 id="RecyclePlus"className="logo">
             <img
               src="./whitelogo.png"
               id="nav-logo"
               height="85rem"
-              width="115rem"
+              width="120rem"
             ></img>{" "}
             RECYCLE +
           </h1>
