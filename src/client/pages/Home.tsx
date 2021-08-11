@@ -2,9 +2,9 @@ import React from "react";
 import { Recycle, Trash, EmojiSmile } from "react-bootstrap-icons";
 import SearchBox from "../components/SearchBox";
 
+
 export default function Home() {
   return (
-    <>
       <div className="container grid space-between">
         
         {/* <SearchBox placeholder="Enter Material Here..."/> */}
@@ -46,6 +46,5 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
   );
 }
