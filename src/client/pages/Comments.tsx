@@ -33,6 +33,7 @@ const Home: React.FC<IHome> = () => {
   // }
 
   return (
+    <>
     <section className="comments-head py-3" id="comments-text">
       <div className="container grid">
         <div>
@@ -73,7 +74,6 @@ const Home: React.FC<IHome> = () => {
           </form>
         </div>
 
-        
         <div>
           <div
             className="comment comment-success text-center"
@@ -94,14 +94,20 @@ const Home: React.FC<IHome> = () => {
               <div className="row justify-content-center align-items-center">
                 {comments.map((comment) => (
                   <CommentCard key={comment.id} comment={comment} />
-                ))}
+                  ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
+<img
+  src="./smalllogo.png"
+  id="nav-logo1"
+  height="550px"
+  width="770px"
+></img>
+</>
   );
 };
 

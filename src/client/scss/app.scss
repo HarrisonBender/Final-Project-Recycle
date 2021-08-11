@@ -42,7 +42,6 @@ body {
   color: black;
   line-height: 1.6;
   background-color: var(--secondary-color);
- 
 }
 
 ul {
@@ -134,7 +133,11 @@ iframe {
 }
 
 .navbar .flex {
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.navbar {
+  justify-content: space-around;
 }
 
 /* Search Box */
@@ -764,7 +767,19 @@ div.searchbox-text {
     margin-left: 4rem
   }
 
- #nav-logo{
-height:"10px";
-width: "10px";
-  }
+#nav-logo1 {
+  position: absolute;
+  bottom: 114px;
+    right: 90px;
+}
+
+#homepage-button {
+  font-size: 35px;
+  padding: 23px 36px;
+
+}
+
+#page-links {
+  font-size: 18px;
+}
+ 
