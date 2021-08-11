@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className="navbar">
-      <div className="container flex">
-        <Link to='/'>
+        <img src= "./whitelogo.png" id="nav-logo" height="85rem" width="85rem"></img>
+      <Link to='/'>
           <h1 className="logo">RECYCLE +</h1>
+       
         </Link>
-        <nav>
+      <div className="container flex">
+      
+        <nav id="page-links">
           <ul>
             <li>
               <a href="/">Home</a>
