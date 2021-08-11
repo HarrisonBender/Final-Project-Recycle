@@ -30,7 +30,7 @@ const SearchBox = () => {
             <br></br>
 
             <div className="dropdown">
-              <button className="btn btn-primary">Recycle it!</button>
+              <button id="homepage-button" className="btn btn-primary">Recycle it!</button>
               <div className="dropdown-content">
                 {material.map(material => <Link to={`/locations/${material.id}`}>{material.name}</Link>)}
               </div>

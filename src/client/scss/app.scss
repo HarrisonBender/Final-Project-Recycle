@@ -42,7 +42,6 @@ body {
   color: black;
   line-height: 1.6;
   background-color: var(--secondary-color);
- 
 }
 
 ul {
@@ -83,9 +82,9 @@ p {
   margin: 10px 0;
 }
 
-img {
-  width: 100%;
-}
+// img {
+//   width: 100%;
+// }
 
 code,
 pre {
@@ -134,7 +133,11 @@ iframe {
 }
 
 .navbar .flex {
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.navbar {
+  justify-content: space-around;
 }
 
 /* Search Box */
@@ -260,16 +263,16 @@ input.zip-input {
 }
 
 /* About */
-.about-head img,
-.comments-head img {
-  width: 200px;
-  justify-self: flex-end;
-}
+// .about-head img,
+// .comments-head img {
+//   width: 200px;
+//   justify-self: flex-end;
+// }
 
-.about-about-body img {
-  width: 300px;
-  justify-self: flex-end;
-}
+// .about-about-body img {
+//   width: 300px;
+//   justify-self: flex-end;
+// }
 
 .about-main .card > i {
   margin-right: 20px;
@@ -763,3 +766,20 @@ div.searchbox-text {
     top: 2rem;
     margin-left: 4rem
   }
+
+#nav-logo1 {
+  position: absolute;
+  bottom: 114px;
+    right: 90px;
+}
+
+#homepage-button {
+  font-size: 35px;
+  padding: 23px 36px;
+
+}
+
+#page-links {
+  font-size: 18px;
+}
+ 

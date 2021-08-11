@@ -11,7 +11,6 @@ router.get("/materialsByCenter/:id", async (req, res) => {
 
 router.get("/:id?", async (req, res) => {
   const id = req.params.id;
-  //get one material
   if (id) {
     try {
       let centerMaterials = await DB.centerMaterials.getCenter(id);
@@ -21,7 +20,6 @@ router.get("/:id?", async (req, res) => {
       res.sendStatus(500);
     }
   } else {
-    //get all materials
     try {
       let centerMaterials = await DB.centerMaterials.all(id);
       res.json(centerMaterials);

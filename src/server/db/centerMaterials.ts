@@ -8,7 +8,7 @@ SELECT * FROM centerMaterials WHERE materials.id = ?;
 `,[id]);
 
 const getCenter = ( id: string) => Query (`
- select recycleCenters.name, recycleCenters.addr, recycleCenters.hours, recycleCenters.countyid 
+select recycleCenters.name, recycleCenters.addr, recycleCenters.hours, recycleCenters.countyid 
 from recycleCenters
 join centerMaterials on recycleCenters.id = centerid
 where centerMaterials.materialsid = ?;
