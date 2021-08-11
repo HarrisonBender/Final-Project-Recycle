@@ -83,9 +83,9 @@ p {
   margin: 10px 0;
 }
 
-img {
-  width: 100%;
-}
+// img {
+//   width: 100%;
+// }
 
 code,
 pre {
@@ -260,16 +260,16 @@ input.zip-input {
 }
 
 /* About */
-.about-head img,
-.comments-head img {
-  width: 200px;
-  justify-self: flex-end;
-}
+// .about-head img,
+// .comments-head img {
+//   width: 200px;
+//   justify-self: flex-end;
+// }
 
-.about-about-body img {
-  width: 300px;
-  justify-self: flex-end;
-}
+// .about-about-body img {
+//   width: 300px;
+//   justify-self: flex-end;
+// }
 
 .about-main .card > i {
   margin-right: 20px;
@@ -762,4 +762,9 @@ div.searchbox-text {
     margin-right: 30rem;
     top: 2rem;
     margin-left: 4rem
+  }
+
+ #nav-logo{
+height:"10px";
+width: "10px";
   }
