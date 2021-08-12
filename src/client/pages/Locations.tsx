@@ -14,8 +14,9 @@ export default function Locations() {
 
   return (
     <>
+      <br></br>
       <h1 className="location-title">Locations</h1>
-
+      <br></br>
       {/* MAP NEEDS TO BE HERE */}
       <div className="container-fluid text-center">
         <div className="locations-map">
@@ -28,6 +29,7 @@ export default function Locations() {
       </div>
 
       <div className="container">
+        <br></br>
         <div className="row justify-content-around">
           {locations.map((locations) => (
             <div
@@ -36,7 +38,8 @@ export default function Locations() {
               style={{ width: "24rem" }}
             >
               <div className="card-body">
-                <h5 className="card-title">{locations.name}</h5>
+                <h5 className="card-title" id="location-cardtitle">{locations.name}</h5>
+                <br></br>
                 <h6 className="card-subtitle mb-2">
                   Address: {locations.addr}
                 </h6>

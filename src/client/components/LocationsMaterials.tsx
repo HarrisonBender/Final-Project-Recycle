@@ -24,9 +24,9 @@ export default function Locations() {
 
   return (
     <>
+      <br></br>
       <h1 className="location-title">Locations Accepting {material?.name}</h1>
-
-
+      <br></br>
       <div className="container-fluid text-center">
         <div className="locations-map">
           <iframe
@@ -40,21 +40,19 @@ export default function Locations() {
       <div className="container">
         <div className="row justify-content-around">
           {locations.map((location, index) => (
-            <div
-              key={id}
-              className="card my-3"
-              style={{ width: "24rem" }}
-            >
+            <div key={id} className="card my-3" style={{ width: "24rem" }}>
               <div className="card-body">
-                <h5 className="card-title">{location?.name}</h5>
+                <h5 className="card-title" id="location-cardtitle">
+                  {location?.name}
+                </h5>
+                <br></br>
                 <h6 className="card-subtitle mb-2">
                   Address: {location?.addr}
                 </h6>
                 <h6 className="card-subtitle mb-2">Hours: {location?.hours}</h6>
               </div>
             </div>
-          )
-          )}
+          ))}
         </div>
       </div>
     </>
